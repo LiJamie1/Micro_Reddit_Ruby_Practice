@@ -3,8 +3,8 @@
 <ul>
   <% @posts.each do |post| %>
     <li>
+    <a href='/posts/<%= post.id %>'>
       <%= post.title %>
-      <div> <%= post.body %></div>
     </li>
   <% end %>
 </ul>
